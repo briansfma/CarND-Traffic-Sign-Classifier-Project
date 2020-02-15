@@ -1,0 +1,10 @@
+./traffic-signs-data/20-44-560-360.txt
+EPOCH 1 ...
+Test Accuracy = 0.978
+Validation Accuracy = 0.927
+EPOCH 2 ...
+Test Accuracy = 0.989
+Validation Accuracy = 0.917
+EPOCH 3 ...
+Test Accuracy = 0.990
+Validation Accuracy = 0.925

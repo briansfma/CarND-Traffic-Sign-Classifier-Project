@@ -1,0 +1,10 @@
+./traffic-signs-data/48-32-48-300-150.txt
+EPOCH 1 ...
+Training Accuracy = 0.744
+Validation Accuracy = 0.689
+EPOCH 2 ...
+Training Accuracy = 0.900
+Validation Accuracy = 0.845
+EPOCH 3 ...
+Training Accuracy = 0.931
+Validation Accuracy = 0.860
