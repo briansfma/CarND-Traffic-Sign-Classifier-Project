@@ -1,104 +1,93 @@
 ./traffic-signs-data/48-32-48-200-100.txt
 EPOCH 1 ...
-Training Accuracy = 0.874
-Validation Accuracy = 0.859
+Training Accuracy = 0.921 
+Validation Accuracy = 0.891 
 EPOCH 2 ...
-Training Accuracy = 0.962
-Validation Accuracy = 0.940
+Training Accuracy = 0.968 
+Validation Accuracy = 0.932 
 EPOCH 3 ...
-Training Accuracy = 0.984
-Validation Accuracy = 0.965
+Training Accuracy = 0.987 
+Validation Accuracy = 0.963 
 EPOCH 4 ...
-Training Accuracy = 0.988
-Validation Accuracy = 0.974
+Training Accuracy = 0.990 
+Validation Accuracy = 0.961 
 EPOCH 5 ...
-Training Accuracy = 0.993
-Validation Accuracy = 0.969
+Training Accuracy = 0.990 
+Validation Accuracy = 0.956 
 EPOCH 6 ...
-Training Accuracy = 0.995
-Validation Accuracy = 0.974
+Training Accuracy = 0.994 
+Validation Accuracy = 0.972 
 EPOCH 7 ...
-Training Accuracy = 0.991
-Validation Accuracy = 0.965
+Training Accuracy = 0.994 
+Validation Accuracy = 0.975 
 EPOCH 8 ...
-Training Accuracy = 0.996
-Validation Accuracy = 0.971
+Training Accuracy = 0.993 
+Validation Accuracy = 0.971 
 EPOCH 9 ...
-Training Accuracy = 0.996
-Validation Accuracy = 0.974
+Training Accuracy = 0.998 
+Validation Accuracy = 0.977 
 EPOCH 10 ...
-Training Accuracy = 0.996
-Validation Accuracy = 0.974
+Training Accuracy = 0.998 
+Validation Accuracy = 0.976 
 EPOCH 11 ...
-Training Accuracy = 0.997
-Validation Accuracy = 0.976
+Training Accuracy = 0.998 
+Validation Accuracy = 0.982 
 EPOCH 12 ...
-Training Accuracy = 0.998
-Validation Accuracy = 0.971
+Training Accuracy = 0.998 
+Validation Accuracy = 0.978 
 EPOCH 13 ...
-Training Accuracy = 0.998
-Validation Accuracy = 0.975
+Training Accuracy = 0.997 
+Validation Accuracy = 0.979 
 EPOCH 14 ...
-Training Accuracy = 0.998
-Validation Accuracy = 0.974
+Training Accuracy = 0.999 
+Validation Accuracy = 0.976 
 EPOCH 15 ...
-Training Accuracy = 0.998
-Validation Accuracy = 0.974
+Training Accuracy = 0.998 
+Validation Accuracy = 0.979 
 EPOCH 16 ...
-Training Accuracy = 0.998
-Validation Accuracy = 0.976
+Training Accuracy = 0.998 
+Validation Accuracy = 0.982 
 EPOCH 17 ...
-Training Accuracy = 0.998
-Validation Accuracy = 0.974
+Training Accuracy = 0.999 
+Validation Accuracy = 0.979 
 EPOCH 18 ...
-Training Accuracy = 0.998
-Validation Accuracy = 0.968
+Training Accuracy = 0.999 
+Validation Accuracy = 0.980 
 EPOCH 19 ...
-Training Accuracy = 0.998
-Validation Accuracy = 0.981
+Training Accuracy = 0.998 
+Validation Accuracy = 0.981 
 EPOCH 20 ...
-Training Accuracy = 0.998
-Validation Accuracy = 0.979
+Training Accuracy = 0.999 
+Validation Accuracy = 0.979 
 EPOCH 21 ...
-Training Accuracy = 0.995
-Validation Accuracy = 0.957
+Training Accuracy = 0.999 
+Validation Accuracy = 0.982 
 EPOCH 22 ...
-Training Accuracy = 0.999
-Validation Accuracy = 0.976
+Training Accuracy = 0.998 
+Validation Accuracy = 0.975 
 EPOCH 23 ...
-Training Accuracy = 0.999
-Validation Accuracy = 0.974
+Training Accuracy = 0.998 
+Validation Accuracy = 0.975 
 EPOCH 24 ...
-Training Accuracy = 0.999
-Validation Accuracy = 0.983
+Training Accuracy = 0.999 
+Validation Accuracy = 0.978 
 EPOCH 25 ...
-Training Accuracy = 0.999
-Validation Accuracy = 0.983
+Training Accuracy = 0.994 
+Validation Accuracy = 0.970 
 EPOCH 26 ...
-Training Accuracy = 0.999
-Validation Accuracy = 0.978
+Training Accuracy = 0.999 
+Validation Accuracy = 0.983 
 EPOCH 27 ...
-Training Accuracy = 0.999
-Validation Accuracy = 0.976
+Training Accuracy = 0.999 
+Validation Accuracy = 0.980 
 EPOCH 28 ...
-Training Accuracy = 0.999
-Validation Accuracy = 0.978
+Training Accuracy = 1.000 
+Validation Accuracy = 0.982 
 EPOCH 29 ...
-Training Accuracy = 0.999
-Validation Accuracy = 0.978
+Training Accuracy = 0.999 
+Validation Accuracy = 0.981 
 EPOCH 30 ...
-Training Accuracy = 0.999
-Validation Accuracy = 0.975
-Model saved
-Test Accuracy = 0.966
-Model saved
-Test Accuracy = 0.966
-EPOCH 1 ...
-Training Accuracy = 0.928 
-Validation Accuracy = 0.919 
-EPOCH 2 ...
-Training Accuracy = 0.971 
-Validation Accuracy = 0.934 
-EPOCH 3 ...
-Training Accuracy = 0.986 
-Validation Accuracy = 0.952 
+Training Accuracy = 0.997 
+Validation Accuracy = 0.976 
+Test Accuracy = 0.971
+Test Accuracy = 0.971
