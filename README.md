@@ -174,12 +174,15 @@ My final model results were:
 I used an iterative approach to build my network - using a pre-made network is something I would do on the job, but this exercise is for learning how they work, so it makes more sense to get dirty and break things.
 
 * What was the first architecture that was tried and why was it chosen?
+
 The first architecture tried was LeNet, as it trains quickly and it reached 92% validation accuracy without too much effort.
 
 * What were some problems with the initial architecture?
+
 It seemed like, no matter what I changed parameter-wise, LeNet either overfits (>7% delta between training and validation accuracy) or just was not very accurate. I could never top 93% reliably with LeNet.
 
 * How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to overfitting or underfitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
+
 Since the network could pretty easily reach 99% accuracy on the training set, the overfitting delta between training and validation accuracy became a key metric to minimize for overall system performance. I experimented with dataset construction and parameter tuning before giving up on LeNet, then implemented Sermanet's traffic sign classifier architecture to try putting both 1st and 2nd-layer convolutions into the fully connected layers. The layer-skipping approach decreased the overfit delta to around 5-6%, and I did notice that performance improved as the number of parameters grew. But, it slowed down training by over 10x and I capped out around 95% validation accuracy.
 
 While waiting for training experiments to complete, I skipped ahead in course materials and learned about GoogLeNet and its focus on small size and fast speed. The inception module was added in, originally with 3 subparts (1x1 -> pool, 1x1 -> 5x5 -> pool and 1x1 -> 3x3 -> pool just like the course materials describe) but I found no difference if I just removed the 3x3. So with a (1x1 -> pool, 1x1 -> 5x5 -> pool) inception layer I saw the overfit delta decrease to 4% at best.
@@ -187,9 +190,11 @@ While waiting for training experiments to complete, I skipped ahead in course ma
 I realized very late that the two fully connected layers were a potential source of overfitting. Both of these were changed to dropout layers, and this made the big difference I needed, with the overfit delta dropping to 1.6-1.8% at best. Still not perfect, but now good enough that if the test accuracy is 99.9%, the validation accuracy can be above 98%, and test accuracy can now be above 97%.
 
 * Which parameters were tuned? How were they adjusted and why?
+
 I experimented with convolution size and stride early on, but did not find any gains straying away from a 5x5 convolution with 1px stride. It seemed like most of the gains were to be found in filter depths and layer widths so I focused my parameter tuning there.
 
 * What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
+
 Multiple convolution layers makes sense for this problem as we are trying to hunt for small features on portions of an image just a few pixels wide - having different sizes and stacks of convolution processes gives the network a chance to build the weights to identify the diverse features. Implementing dropout on the fully connected layers was empirically extremely helpful - perhaps because many of the signs share similar features, differing only by a pattern in the center, it would be useful to drop out nodes that activate on commonly shared features (a red ring, for instance) and focus training on the nodes that activate with distinguishing features.
 
 ### Test a Model on New Images
