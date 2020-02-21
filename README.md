@@ -189,9 +189,13 @@ While waiting for training experiments to complete, I skipped ahead in course ma
 
 I realized very late that the two fully connected layers were a potential source of overfitting. Both of these were changed to dropout layers, and this made the big difference I needed, with the overfit delta dropping to 1.6-1.8% at best. Still not perfect, but now good enough that if the test accuracy is 99.9%, the validation accuracy can be above 98%, and test accuracy can now be above 97%.
 
+For those interested, the iterative progress (training accuracy, validation accuracy, etc across epochs) is logged in several text files within the extra folders in this Git (`./Runs with inception and dropout`, etc).
+
 * Which parameters were tuned? How were they adjusted and why?
 
 I experimented with convolution size and stride early on, but did not find any gains straying away from a 5x5 convolution with 1px stride. It seemed like most of the gains were to be found in filter depths and layer widths so I focused my parameter tuning there.
+
+To attempt to get the best performance possible out of the training epochs, I implemented parameter saving on the model only if the validation accuracy of the current epoch was better than all epochs past. This doesn't "help" the network per se but avoids losing progress if the training was going well and suddenly started performing worse.
 
 * What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
 
